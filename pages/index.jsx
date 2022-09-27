@@ -15,7 +15,10 @@ const Home = () => {
     <div>
       <h1 className='text-cyan-500'>Hello world!</h1>
       {productList.map((product) => (
-        <div key={product.id}>{product.name}</div>
+        <div key={product.id}>
+          <p>{product.id}</p>
+          <p>{product.name}</p>
+        </div>
       ))}
     </div>
   )
